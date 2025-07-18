@@ -1,0 +1,28 @@
+name: Download M3U Playlist
+
+on:
+  workflow_dispatch:  # Manual trigger
+
+permissions:
+  contents: write  # 🚨 Needed for push access
+
+jobs:
+  fetch-m3u:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+
+      - name: Download M3U File
+        run: |
+          curl -L "https://enter_your_url/playlist.m3u" -o playlist.m3u
+
+      - name: Commit and Push Changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add playlist.m3u
+          git commit -m "🔄 Auto-update playlist.m3u"
+          git push origin HEAD
+          
