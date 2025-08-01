@@ -16,7 +16,7 @@ jobs:
 
       - name: Download M3U File
         run: |
-          curl -L "https://enter_your_url/playlist.m3u" -o playlist.m3u
+          curl -L "https://live.dinesh29.com.np/tataplay.m3u" -o playlist.m3u
 
       - name: Commit and Push Changes
         run: |
