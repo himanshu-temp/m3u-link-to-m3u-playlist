@@ -16,7 +16,7 @@ jobs:
 
       - name: Download M3U File
         run: |
-          curl -L "https://opplex-playlist-tv-by-xfireflix.pages.dev/opplexv3.m3u/" -o playlist.m3u
+          curl -L "https://allinonereborn.fun/jiotv-m3u/jiotv-in488.m3u" -o playlist.m3u
 
       - name: Commit and Push Changes
         run: |
