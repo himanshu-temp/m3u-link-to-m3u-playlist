@@ -16,7 +16,7 @@ jobs:
 
       - name: Download M3U File
         run: |
-          curl -L "https://allinonereborn.fun/tplay001.m3u" -o playlist.m3u
+          curl -L "https://freelivtv.xyz/token/freelivtv.m3u?token=AozzeVW" -o playlist.m3u
 
       - name: Commit and Push Changes
         run: |
