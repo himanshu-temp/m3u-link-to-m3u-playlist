@@ -16,7 +16,7 @@ jobs:
 
       - name: Download M3U File
         run: |
-          curl -L "https://allinonereborn.fun/playlist/airtel.m3u" -o playlist.m3u
+          curl -L "https://example.com/playlist.m3u" -o playlist.m3u
 
       - name: Commit and Push Changes
         run: |
