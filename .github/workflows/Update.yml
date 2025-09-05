@@ -16,7 +16,7 @@ jobs:
 
       - name: Download M3U File
         run: |
-          curl -L "http://webo.asia:80/get.php?username=6992&password=2996&type=m3u_plus&output=m3u8" -o playlist.m3u
+          curl -L "https://allinonereborn.fun/playlist/airtel.m3u" -o playlist.m3u
 
       - name: Commit and Push Changes
         run: |
