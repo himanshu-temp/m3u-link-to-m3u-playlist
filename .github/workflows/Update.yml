@@ -16,7 +16,7 @@ jobs:
 
       - name: Download M3U File
         run: |
-          curl -L "http://front-main.eagle-4k.me/play/live.php?mac=00:1A:79:BD:42:AC" -o playlist.m3u
+          curl -L "https://la.drmlive.net/tp/playlist" -o playlist.m3u
 
       - name: Commit and Push Changes
         run: |
